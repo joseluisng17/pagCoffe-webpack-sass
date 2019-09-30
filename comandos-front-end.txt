@@ -1,0 +1,71 @@
+---------INSTALAR EL PACKAJE.JSON ------
+
+	npm init
+
+--------- INSTALAR WEBPACK---------
+
+	npm install --save-dev webpack
+
+-------- PARA WINDOWS TAMBIEN SE INSTALA LO SIGUIENTE -------
+
+	webpack-cli -D
+
+
+------ INSTALAR SERVIDOR PARA WEBPACK PARA PODER ABRIR EN LE NAVEGADOR-------
+
+	npm install webpack-dev-server --save-dev
+
+
+------- instalar el html webpack ----------
+
+	npm install html-webpack-plugin --save-dev
+
+-------- instalar style css sass---------------
+
+	npm install style-loader css-loader sass-loader --save-dev
+
+	npm install node-sass --save -dev
+
+
+------- instalar para cargar url para cargar imagenes .jpg ---------
+
+	Primer paso: npm install url-loader
+
+	segundo paso, agregar esta regla al archivo webpack.config.js
+
+	{
+	  test: /\.jpg$/,
+          loader: 'url-loader' 
+	}
+
+
+
+------ para extraer sass ------
+
+	npm install extract-text-webpack-plugin
+
+
+---- comando para combinar archivo de desarrollo y producción
+
+	npm install webpack-merge
+
+
+-------- Instalas los html loader ----------
+
+	npm install html-loader
+
+
+------ Generar los archivos de producción -----------
+
+	npm run build
+
+
+
+
+------ probar el archivo generado en la carpeta dist ------
+
+
+	npm intall -g node-static
+
+
+	luego en la consola escriben: static
